@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { ReactTyped } from "react-typed";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <div className="home-content">
         <h2>Welcome to <span className='highlight'><ReactTyped strings={['Productivity', 'Effectiveness', 'Innovation', 'SuprNova.']} startDelay={1000} typeSpeed={100} backSpeed={50}></ReactTyped></span></h2>
         <p>Reach for the stars.</p>
-        <button className="contact_btn">Contact Us</button>
+        <AnchorLink href='#contact'><button className="contact_btn">Contact Us</button></AnchorLink>
       </div>
       <div className="shooting-star shooting-star-1">
         <div className="star-head"></div>

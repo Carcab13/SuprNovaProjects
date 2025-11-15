@@ -23,6 +23,12 @@
   color: #fff;
   font-size: 15px;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer
+}
+
+.home-content .contact_btn:hover {
+  transform: translateY(-0.4rem);
 }
 
 .home-section h2 {
