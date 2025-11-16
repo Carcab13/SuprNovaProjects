@@ -5,15 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background: #f8f7fc;
 }
 
-.tittle {
+.title {
   position: sticky;
   top: 0;
   width: 100%;
   text-align: center;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1rem 0;
   z-index: 999;
 }
@@ -54,7 +56,6 @@
   background: white;
   transition: all 0.3s ease-in-out;
   margin: 0 auto;
-  border: 1px solid rgba(107, 92, 165, 0.1);
 }
 
 .card:hover {
@@ -63,7 +64,7 @@
 }
 
 .card-top {
-  background: linear-gradient(135deg, #6B5CA5 0%, #E0ACD5 100%);
+  background: #6B5CA5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,13 +89,18 @@
   opacity: 1;
 }
 
-.card-top .emoji {
-  font-size: 4rem;
+.icon-wrapper {
+  color: white;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
-.card:hover .card-top .emoji {
+.icon-wrapper svg {
+  width: 60px;
+  height: 60px;
+}
+
+.card:hover .icon-wrapper {
   transform: scale(1.1);
 }
 
@@ -123,8 +129,8 @@
 }
 
 .tag {
-  background: linear-gradient(to right, #6B5CA5, #E0ACD5);
-  color: #fff;
+  background-color: #ede9f6;
+  color: #5a4c8a;
   border-radius: 20px;
   padding: 0.4rem 1rem;
   font-size: 0.85rem;
@@ -166,4 +172,3 @@
     padding: 1.5rem 1.2rem;
   }
 }
-
